@@ -1,0 +1,90 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.formContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    padding: 45px 30px 30px 30px;
+}
+
+.formHeader {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid gray;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    background-color: lightgray;
+}
+
+.formHeader p {
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    flex-direction: column;
+}
+
+form input {
+    align-content: center;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border: 1px solid #959292;
+    border-radius: 2px;
+    line-height: 1.7;
+    font-size: 0.8rem;
+}
+
+.nameInputWrapper {
+    justify-content: space-between;
+    max-width: 329px;
+}
+
+.name {
+    width: 48%;
+}
+
+.userAccept {
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.userAccept p {
+    margin-left: 5px;
+}
+
+a {
+    color: #046d04;
+    text-decoration: none;
+}
+
+.registerButton {
+    border: none;
+    color: #fff;
+    background: linear-gradient(#24a824, #046d04);
+}

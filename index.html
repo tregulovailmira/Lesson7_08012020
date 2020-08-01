@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="formContainer">
-        <div class="formHeader">
+    <div class="formContainer flex">
+        <div class="formHeader flex">
+            <hr>
             <h1>Register</h1>
             <p>Create your account. It's free and only takes minute</p>
         </div>
-        <form>
+        <form class="flex">
             <label for="firstName"></label>
             <label for="lastName"></label>
             <label for="email"></label>
@@ -19,14 +24,16 @@
             <label for="confirmPassword"></label>
             <label for="userAcceptCheckbox"></label>
             <label for="registerButton"></label>
-            <input type="text" class="name firstName" id="firstName" placeholder="First Name">
-            <input type="text" class="name lastName" id="lastName" placeholder="Last Name">
+            <div class="nameInputWrapper flex">
+                <input type="text" class="name" id="firstName" placeholder="First Name">
+                <input type="text" class="name" id="lastName" placeholder="Last Name">
+            </div>
             <input type="email" class="email" id="email" placeholder="Email">
             <input type="password" class="password" id="password" placeholder="Password">
             <input type="password" class="password" id="confirmPassword" placeholder="Confirm Password">
-            <div class="userAccept">
+            <div class="userAccept flex">
                 <input type="checkbox" id="userAcceptCheckbox">
-                <p>I accept the <a href="#">Term of Use</a> & <a href="#">Privacy Policy</a></p>
+                <p>I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></p>
             </div>
             <input type="button" class="registerButton" id="registerButton" value="Register Now">
         </form>
