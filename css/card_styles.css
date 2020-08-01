@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundWrapper {
+    background-image: url("../images/background_image.jpg");
+}
+
+.userPhoto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
